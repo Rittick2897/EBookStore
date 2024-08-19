@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+  
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <nav class=" navbar navbar-expand-sm bg-light navbar-light">
+            <div class="container-fluid">
+                <ul class=" navbar-nav">
+                    <li class=" nav-item" style="width:30%;">
+                        <img src="~/images/readershaven_logo(1).jpg" style="width: 27%;border-radius: 50%;margin-left: 18%;" alt="Reader's Haven Logo" />
+
+                    </li>
+                    <li class=" nav-item" style="width: 40%;margin-top: 3%;">
+                        <div style="display:inline-flex; width:100%;">
+                            <input type="text" class="form-control" placeholder="Haven is yours" name="search" style="margin-right: 7%;" />
+                            <button type="button" class="btn btn-outline-success">Search</button>
+                        </div>
+                    </li>
+                    <li class=" nav-item" style="width: 15%;margin-top: 3%;margin-left: 15%;
+}">
+                        <div class="LogRegBtn">
+                            <a href="#" class="btn btn-success">Login</a>
+                            <a href="#" class="btn btn-warning hover-rotate-start">Register</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class=" border-top card-footer text-muted">
+        <div class="container">
+            <textarea></textarea>
+        </div>
+    </footer>
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/jquery/jquery.slim.min.js"></script>
+    <script src="~/jquery/jquery.slim.js"></script>
+    <script src="~/jquery/jquery.js"></script>
+    <script src="~/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/bootstrap/js/bootstrap.esm.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.esm.js"></script>
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.js"></script>
+    @await RenderSectionAsync(name: "Scripts", required: false);
+</body>
+</html>
