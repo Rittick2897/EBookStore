@@ -8,5 +8,15 @@ namespace EBookStore.Controllers
         {
             return View();
         }
+
+        public IActionResult NewReleases()
+        {
+            return View();
+        }
+
+        public IActionResult BestSellers()
+        {
+            return View();
+        }
     }
 }

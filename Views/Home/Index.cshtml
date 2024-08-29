@@ -3,56 +3,106 @@
 }
 
 <div class="HomePageRH">
-    <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <section>
+        <div class="container">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="margin-left:0%">
-                <img src="/images/RomComs.jpeg" alt="Los Angeles" class="d-block" style="width:100%">
-                <div class="carousel-caption">
-                    <h3>Rom Coms of this generation</h3>
-                    <p>Your heart will go gaga!!</p>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                 </div>
-            </div>
-            <div class="carousel-item" style="margin-left:0%">
-                <img src="/images/Sci-Fi.jpeg" alt="Chicago" class="d-block" style="width:100%">
-                <div class="carousel-caption">
-                    <h3>Sci-Fi releases</h3>
-                    <p>Live the most ususual fantasies of the cosmos</p>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="margin-left:0%">
+                        <img src="/images/RomComs.jpeg" alt="Los Angeles" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>Rom Coms of this generation</h3>
+                            <p>Your heart will go gaga!!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="margin-left:0%">
+                        <img src="/images/Sci-Fi.jpeg" alt="Chicago" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>Sci-Fi releases</h3>
+                            <p>Live the most ususual fantasies of the cosmos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="margin-left:0%">
+                        <img src="/images/Horror.jpeg" alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>Horror Genre</h3>
+                            <p>get ready to feel shivers down the spine</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item" style="margin-left:0%">
-                <img src="/images/Horror.jpeg" alt="New York" class="d-block" style="width:100%">
-                <div class="carousel-caption">
-                    <h3>Horror Genre</h3>
-                    <p>get ready to feel shivers down the spine</p>
-                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" style="position: relative;left: 59rem;"></span>
+                </button>
             </div>
         </div>
+    </section>
 
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon" style="position: relative;left: 59rem;"></span>
-        </button>
-    </div>
-    <h1>Shop Your favourite Books Now From Reader's Haven</h1>
+    <section class="SecCategory">
+        <div class="container">
+            <h1>Shop Your favourite Books Now From Reader's Haven</h1>
 
-    <div class="SectionsForBooks">
-        <div class="NewRel">
-            <img src="/images/House of Hollow by Krystal Sutherland.jpeg" alt="New Releases" style="width:20%;height:45vh;" />
-            <h6>New Releases</h6>
+            <div class="SectionsForBooks">
+                <div class="cl-custom col" style="margin-right: 5rem;">
+                    <a asp-controller="Home" asp-action="NewReleases">
+                        <div class="BoxCategories">
+                            <img src="/images/NewRelease_Oxf.png" alt="New Releases" />
+                            <h6>New Releases</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cl-custom col" style="margin-right: 5rem;">
+                    <a href="/Home/BestSellers">
+                        <div class="BoxCategories">
+                            <img src="/images/Best_Sellers.png" alt="Best Sellers" />
+                            <h6>Best Sellers</h6>
+                        </div>
+                    </a>
+                </div>
+              
+                <div class="cl-custom col" style="margin-right: 5rem;">
+                    <a href="#">
+                        <div class="BoxCategories">
+                            <img src="/images/Signed_Edition.png" alt="Signed Edition" />
+                            <h6>Signed Edition</h6>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="cl-custom col" style="margin-right: 5rem;">
+                    <a href="#">
+                        <div class="BoxCategories">
+                            <img src="/images/Summer_Read.png" alt="Summer Reading" />
+                            <h6>Summer Reading</h6>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="cl-custom col">
+                    <a href="#">
+                        <div class="BoxCategories">
+                            <img src="/images/Bangla.png" style="width:50%;" alt="Bengali Books" />
+                            <h6>Bengali Books</h6>
+                        </div>
+                    </a>
+                </div>
+              
+
+            </div>
         </div>
-
-    </div>
+    </section>
 </div>
